@@ -1,16 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid=f427ac2a434e25790de0c97c67104b2b
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--bootstrap link -->
+    <link
+      rel="stylesheet"
+      href="https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid=f427ac2a434e25790de0c97c67104b2b"
+    />
+    <!--css style sheet via bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
     <title>Server-Side APIs Challenge: Weather Dashboard</title>
-</head>
+  </head>
+  <!--Uses the OpenWeather API to retrieve weather data and Uses localStorage to store persistent data -->
 
-
-
-<body>
-    
-</body>
+  <body>
+    <!--jumbotron "weatherboard dashboard" col -12 -->
+    <div class="container col-12">
+      <!-- Content here -->
+        <div class="col-2">
+            <div class="row">
+            <h1>Search for a city:</h1>
+            <!-- left text area col-3 "suggested city"-->
+            <textarea>Suggested City</textarea>
+            <!--button "search" -->
+            <button>Search</button>
+            <textarea class="searchedCity">Seattle, WA</textarea>
+            <textarea class="searchedCity">Chicago, IL</textarea>
+            <textarea class="searchedCity">New York City, NY</textarea>
+            <textarea class="searchedCity">Durham, NC</textarea>
+            <textarea class="searchedCity">Santa Fe, NM</textarea>
+            <textarea class="searchedCity">Port Townsend, WA</textarea>
+            <textarea class="searchedCity">Boston. Ma</textarea>
+            <textarea class="searchedCity">Tampa, Fl</textarea>
+            </div>
+    <!--right container for city day of -->
+          <div class="cityDataName col-8"></div>
+          <h1 class = "cityDayof">Seattle</h1>
+          <ul class ="cityData"></ul>
+            <li>Date</li>
+            <li>icon</li>
+            <li>Wind:</li>
+            <li>Temp:</li>
+            <li>Humidity:</li>
+        </div>
+          
+    <!--container city (date) temp: wind: humidity  -->
+    <!-- 5 day forcast date, icon, temp, wind, humitidty -->
+          <div class="col-2">Empty/padding left</div>
+       
+        </div>
+  </body>
 </html>
+
+
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
