@@ -4,11 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--bootstrap link -->
-    <link
-      rel="stylesheet"
-      href="https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid=f427ac2a434e25790de0c97c67104b2b"
-    />
     <!--css style sheet via bootstrap -->
     <link
       rel="stylesheet"
@@ -20,47 +15,103 @@
   </head>
   <!--Uses the OpenWeather API to retrieve weather data and Uses localStorage to store persistent data -->
 
+  <!--bootstrap notes container, row col -12 max >  -->
   <body>
     <!--jumbotron "weatherboard dashboard" col -12 -->
-    <div class="container col-12">
+   <header>
+    <div class="jumbotron jumbotron-fluid bg-secondary">
+      <div class="container text-white"> 
+        <h1 class="display-3">Weather Dashboard</h1>
+        </div>
+    </div>
+    </header>
+    
       <!-- Content here -->
-        <div class="col-2">
-            <div class="row">
-            <h1>Search for a city:</h1>
-            <!-- left text area col-3 "suggested city"-->
-            <textarea>Suggested City</textarea>
-            <!--button "search" -->
-            <button>Search</button>
-            <textarea class="searchedCity">Seattle, WA</textarea>
-            <textarea class="searchedCity">Chicago, IL</textarea>
-            <textarea class="searchedCity">New York City, NY</textarea>
-            <textarea class="searchedCity">Durham, NC</textarea>
-            <textarea class="searchedCity">Santa Fe, NM</textarea>
-            <textarea class="searchedCity">Port Townsend, WA</textarea>
-            <textarea class="searchedCity">Boston. Ma</textarea>
-            <textarea class="searchedCity">Tampa, Fl</textarea>
-            </div>
-    <!--right container for city day of -->
-          <div class="cityDataName col-8"></div>
-          <h1 class = "cityDayof">Seattle</h1>
-          <ul class ="cityData"></ul>
-            <li>Date</li>
-            <li>icon</li>
-            <li>Wind:</li>
-            <li>Temp:</li>
-            <li>Humidity:</li>
+      <div class="row p-4 mb-3">
+        <div class="col-3">
+          <h1>Search for a city:</h1>
+          <!-- left text area col-3 "suggested city"-->
+          <input class="searchData"></input>
+          <!--button "search" -->
+          <div class="dropdown-divider"></div>
+          <button class="searchBtn">Search</button>
+          <div class="dropdown-divider"></div>
+          <div id="search1" class="card col-sm-8 bg-secondary text-white p-3 mb-2"></div>
+          <div class="dropdown-divider"></div>
+          <div class="card col-sm-8 bg-secondary text-white p-3 mb-2"></div>
+          <div class="dropdown-divider"></div>
+          <div class="card col-sm-8 bg-secondary text-white p-3 mb-2"></div>
+          <div class="dropdown-divider"></div>
+          <div class="card col-sm-8 bg-secondary text-white p-3 mb-2"></div>
+          <div class="dropdown-divider"></div>
+          <div class="card col-sm-8 bg-secondary text-white p-3 mb-2"></div>
+          <div class="dropdown-divider"></div>
+          <div class="card col-sm-8 bg-secondary text-white p-3 mb-2"></div>
+          <div class="dropdown-divider"></div>
+          <div class="card col-sm-8 bg-secondary text-white p-3 mb-2"></div>
+          <div class="dropdown-divider"></div>
+          <div class="card col-sm-8 bg-secondary text-white p-3 mb-2"></div>
+        <!-- end of column-->
         </div>
-          
-    <!--container city (date) temp: wind: humidity  -->
-    <!-- 5 day forcast date, icon, temp, wind, humitidty -->
-          <div class="col-2">Empty/padding left</div>
-       
+
+        <!-- 5 day forcast date, icon, temp, wind, humitidty -->
+        <div class="col-9">
+          <!-- SHOULD THIS ROW AND COLUMN BE SWITCHED?-->
+          <div class="row card col-10 bg-info text-white p-3 mb-2">
+            <h1 class="cityDataName">Current Weather:</h1>
+            <p id="currentDay"></p>
+            <ul id="todaysWeatherContainer">
+            </ul>
+          </div>
+
+
+          <!--Five day forcast -->
+          <div class= "container"><h1>5-Day Forecast</h1>
+          <div class="row col-10 bg-secondary text-white p-5 mb-2">
+
+          <div class="fiveDayContainer1 card col-sm-2 bg-info text-white">
+            <ul>
+              <p id="tomM"></p>
+            </ul>
+          </div>
+
+          <div class="fiveDayContainer2 card col-sm-2 bg-info text-white">
+            <ul>
+              <p id="tomM2"></p>
+            </ul>
+          </div>
+
+          <div class="fiveDayContainer3 card col-sm-2 bg-info text-white">
+            <ul>
+              <p id="tomM3"></p>
+            </ul>
+          </div>
+
+          <div class="fiveDayContainer4 card col-sm-2 bg-info text-white">
+            <ul>
+              <p id="tomM4"></p>
+            </ul>
+          </div>
+
+          <div class="fiveDayContainer5 card col-sm-2 bg-info text-white">
+            <ul>
+              <p id="tomM5"></p>
+            </ul>
+          </div>
+       </div>
+
+
+
+          </div>
         </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/script.js"></script>
   </body>
 </html>
 
-
-<!-- -->
 <!-- -->
 <!-- -->
 <!-- -->

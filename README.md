@@ -18,20 +18,23 @@ WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 
 # Usage
+This practice will provide future potential employers the opportunity to see student works in early learning of Java-Script, and API's such as Bootstrap and jQuery.
 
 # Features
+This deployed and functional Weather Dashboard will respnd to the user typing in a city, the code will calculate the coordinates and provide current weather as well as a five day forecast of the area. When this dashboard is fully functionional, it will additionally save searches desplyed in the grey rectangles under the search section allowing the user to re-visit recent weather information. 
 
 # Links
 [] () 
-[] () 
+[GitHub Repository] (https://github.com/mwambaugh/ServerSideAPIWeatherDashboard) 
 
 
 # Visuals 
-![""]()
-![""]()
+!["Screenshot One before searching"](./assets/photos/screenshotone.jpg)
+!["Screenshot Two after Searching 'Seattle' "](./assets/photos/Screenshot%202022-11-07%20231142.jpg)
+!["Screenshot Three after Searching 'Seattle' "](./assets/photos/Screenshot%202022-11-07%20231207.jpg)
 
 # Contributing:
-This assignment was worked on by student, M.C. Wambaugh, with the support of her instructor John, TA's via Slack and office hours. The student also worked with a tutor and classmates via Slack and Zoom. The student also used universial resources such as  W3schools.com, FreeCodeCamp.org, the Class 'Resources' tab via Slack. Many thanks to those who continue to support learning in the technological community.
+This assignment was worked on by student, M.C. Wambaugh, with the support of her TA's during office hours and meeting regularly with a tutor. The student also used universial resources such as  W3schools.com, FreeCodeCamp.org, Moment, Bootstrap, and jQuery. Many thanks to those who continue to support learning in the technological community.
 
 # License 
 [MIT](https://choosealicense.com/licenses/mit/) 
