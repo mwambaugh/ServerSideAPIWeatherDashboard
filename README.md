@@ -24,7 +24,7 @@ This practice will provide future potential employers the opportunity to see stu
 This deployed and functional Weather Dashboard will respnd to the user typing in a city, the code will calculate the coordinates and provide current weather as well as a five day forecast of the area. When this dashboard is fully functionional, it will additionally save searches desplyed in the grey rectangles under the search section allowing the user to re-visit recent weather information. 
 
 # Links
-[] () 
+[Link to deployed website] (https://mwambaugh.github.io/ServerSideAPIWeatherDashboard/) 
 [GitHub Repository] (https://github.com/mwambaugh/ServerSideAPIWeatherDashboard) 
 
 
@@ -32,6 +32,7 @@ This deployed and functional Weather Dashboard will respnd to the user typing in
 !["Screenshot One before searching"](./assets/photos/screenshotone.jpg)
 !["Screenshot Two after Searching 'Seattle' "](./assets/photos/Screenshot%202022-11-07%20231142.jpg)
 !["Screenshot Three after Searching 'Seattle' "](./assets/photos/Screenshot%202022-11-07%20231207.jpg)
+!["Deployed Site"](./assets/photos/deployed.jpg)
 
 # Contributing:
 This assignment was worked on by student, M.C. Wambaugh, with the support of her TA's during office hours and meeting regularly with a tutor. The student also used universial resources such as  W3schools.com, FreeCodeCamp.org, Moment, Bootstrap, and jQuery. Many thanks to those who continue to support learning in the technological community.
